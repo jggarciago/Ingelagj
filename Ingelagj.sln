@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingelagj", "Ingelagj\Ingela
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingelagj.Tests", "Ingelagj.Tests\Ingelagj.Tests.csproj", "{580BE3BA-9E99-4FF2-8712-3BBCD2E73A63}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{EF29F684-F35E-4D66-A888-77B92021E916}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{580BE3BA-9E99-4FF2-8712-3BBCD2E73A63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{580BE3BA-9E99-4FF2-8712-3BBCD2E73A63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{580BE3BA-9E99-4FF2-8712-3BBCD2E73A63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF29F684-F35E-4D66-A888-77B92021E916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF29F684-F35E-4D66-A888-77B92021E916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF29F684-F35E-4D66-A888-77B92021E916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF29F684-F35E-4D66-A888-77B92021E916}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
