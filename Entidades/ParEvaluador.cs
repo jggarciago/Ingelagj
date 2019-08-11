@@ -8,5 +8,7 @@ namespace Entidades
 {
     class ParEvaluador
     {
+        string nombre;
+        string correoElectronico;
     }
 }

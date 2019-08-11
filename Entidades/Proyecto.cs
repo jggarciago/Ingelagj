@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class Docente
+    class Proyecto
     {
-        string nombre; 
-        string documento;
+        string nombre;
+        string estado;
     }
 }
