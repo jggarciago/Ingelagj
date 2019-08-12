@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Ingelagj.Controllers;
 
 namespace Ingelagj.Controllers
 {
@@ -14,9 +15,10 @@ namespace Ingelagj.Controllers
             return true;
         }
 
-        public ParEvaluador asignarPar (string documento, string nombre)
+        public AsigarPuntosController asignarPar (string documento, string nombre)
         {
-            return ParEvaluador;
+            AsigarPuntosController p = new AsigarPuntosController();
+            return p;
         }
 
         public Boolean guardarParEvaluador (string documento, string nomnbre)

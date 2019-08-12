@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class Proyecto
+    public class Proyecto
     {
         string nombre;
         string estado;
@@ -28,7 +28,10 @@ namespace Entidades
          * @param comite es el comite para el proyecto
          * @param pdfProyecto es el archivo pdf en el que se presenta el proyecto
          */ 
+         public Proyecto()
+        {
 
+        }
         public Proyecto(string nombre, string estado, string modalidad, string fechaAprobacion, string fechaRadicacion, string codigo, string comite, string pdfProyecto)
         {
             this.Nombre = nombre;
@@ -54,4 +57,6 @@ namespace Entidades
         public string Comite { get => comite; set => comite = value; }
         public string PdfProyecto { get => pdfProyecto; set => pdfProyecto = value; }
     }
+
+    
 }

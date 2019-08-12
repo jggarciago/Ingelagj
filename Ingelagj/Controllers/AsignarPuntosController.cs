@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-
+using Entidades;
 namespace Ingelagj.Controllers
 {
     public class AsigarPuntosController : ApiController
@@ -21,7 +21,8 @@ namespace Ingelagj.Controllers
 
         public Proyecto buscarProyecto (string documento)
         {
-            return Proyecto;
+            Proyecto proyecto = new Proyecto();
+            return proyecto;
         }
 
         public Boolean verificarPromedio (string promedio)

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Entidades;
 
 namespace Ingelagj.Controllers
 {
@@ -16,6 +17,7 @@ namespace Ingelagj.Controllers
 
         public Usuario generarUsuario (string documento)
         {
+            Usuario usuario = new Usuario();
             return Usuario;
         }
 

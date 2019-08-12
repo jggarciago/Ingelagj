@@ -20,6 +20,12 @@ namespace Entidades
          * @param tipo se refiere al tipo de usuario que está ingresando al sistema (Par Evaluador, Funcionario)
          * @param correoElectronico es el correo electronico del usuario
          */
+
+        public Usuario ()
+        {
+        }
+
+
         public Usuario(string nombre, string contraseña, string tipo, string correoElectronico)
         {
             this.Nombre = nombre;
