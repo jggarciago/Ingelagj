@@ -16,11 +16,17 @@ namespace Entidades
 
         public Proyecto(string nombre, string estado, string modalidad, string fechaAprobacion, string fechaRadicacion)
         {
-            this.nombre = nombre;
-            this.estado = estado;
-            this.modalidad = modalidad;
-            this.fechaAprobacion = fechaAprobacion;
-            this.fechaRadicacion = fechaRadicacion;
+            this.Nombre = nombre;
+            this.Estado = estado;
+            this.Modalidad = modalidad;
+            this.FechaAprobacion = fechaAprobacion;
+            this.FechaRadicacion = fechaRadicacion;
         }
+
+        public string Nombre { get => nombre; set => nombre = value; }
+        public string Estado { get => estado; set => estado = value; }
+        public string Modalidad { get => modalidad; set => modalidad = value; }
+        public string FechaAprobacion { get => fechaAprobacion; set => fechaAprobacion = value; }
+        public string FechaRadicacion { get => fechaRadicacion; set => fechaRadicacion = value; }
     }
 }

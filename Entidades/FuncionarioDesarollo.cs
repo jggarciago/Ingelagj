@@ -10,5 +10,14 @@ namespace Entidades
     {
         string usuario;
         string contraseña;
+
+        public FuncionarioDesarollo(string usuario, string contraseña)
+        {
+            this.Usuario = usuario;
+            this.Contraseña = contraseña;
+        }
+
+        public string Usuario { get => usuario; set => usuario = value; }
+        public string Contraseña { get => contraseña; set => contraseña = value; }
     }
 }
