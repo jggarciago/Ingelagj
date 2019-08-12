@@ -10,5 +10,7 @@ namespace Entidades
     {
         string nombre;
         string correoElectronico;
+        string cedula;
+        string telefono;
     }
 }

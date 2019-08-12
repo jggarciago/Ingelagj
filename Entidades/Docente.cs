@@ -9,7 +9,6 @@ namespace Entidades
     class Docente
     {
         string nombre;
-        string apellido;
         string documento;
     }
 }

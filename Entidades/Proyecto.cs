@@ -10,5 +10,8 @@ namespace Entidades
     {
         string nombre;
         string estado;
+        string modalidad;
+        string fechaAprobacion;
+        string fechaRadicacion;
     }
 }
