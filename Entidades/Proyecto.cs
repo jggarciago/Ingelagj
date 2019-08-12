@@ -13,5 +13,14 @@ namespace Entidades
         string modalidad;
         string fechaAprobacion;
         string fechaRadicacion;
+
+        public Proyecto(string nombre, string estado, string modalidad, string fechaAprobacion, string fechaRadicacion)
+        {
+            this.nombre = nombre;
+            this.estado = estado;
+            this.modalidad = modalidad;
+            this.fechaAprobacion = fechaAprobacion;
+            this.fechaRadicacion = fechaRadicacion;
+        }
     }
 }

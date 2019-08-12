@@ -13,3 +13,4 @@ namespace Entidades
         string tipo;
     }
 }
+public int Usuario { get; set; }
