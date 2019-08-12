@@ -18,7 +18,8 @@ namespace Ingelagj.Controllers
         public Usuario generarUsuario (string documento)
         {
             Usuario usuario = new Usuario();
-            return Usuario;
+
+            return usuario;
         }
 
         public string generarContraseña (Usuario usuario, string documento)
