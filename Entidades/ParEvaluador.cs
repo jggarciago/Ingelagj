@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class ParEvaluador
+    public class ParEvaluador
     {
         string nombre;
         string correoElectronico;

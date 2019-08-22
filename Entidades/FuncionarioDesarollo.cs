@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class FuncionarioDesarollo
+    public class FuncionarioDesarollo
     {
         string usuario;
         string contraseña;
