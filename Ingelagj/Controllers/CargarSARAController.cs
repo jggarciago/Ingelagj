@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entidades;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -11,6 +12,15 @@ namespace Ingelagj.Controllers
 {
     public class CargarSARAController : ApiController
     {
+        Contexto contexto;
+
+        public CargarSARAController()
+        {
+            contexto = FabricaContextos.fabricarContexto("lista");
+        }
+        /**
+         * Currently not working
+         */
         // POST api/values
         [HttpPost, Route("api/upload")]
         public async Task<IHttpActionResult> Post()

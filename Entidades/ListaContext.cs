@@ -9,7 +9,7 @@ namespace Entidades
     /**
      * Clase de fachada para la base de datos.
      */
-    class ListaContext : Contexto
+    public class ListaContext : Contexto
     {
         public List<Docente> Docentes { get; set; }
         public List<FuncionarioDesarollo> Funcionarios { get; set; }

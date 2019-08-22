@@ -52,6 +52,7 @@
     <Compile Include="Contexto.cs" />
     <Compile Include="DesarrolloDbContext.cs" />
     <Compile Include="Docente.cs" />
+    <Compile Include="FabricaContextos.cs" />
     <Compile Include="FuncionarioDesarollo.cs" />
     <Compile Include="ListaContext.cs" />
     <Compile Include="ParEvaluador.cs" />
