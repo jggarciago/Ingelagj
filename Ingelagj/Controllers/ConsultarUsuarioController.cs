@@ -10,9 +10,11 @@ namespace Ingelagj.Controllers
 {
     public class ConsultarUsuarioController : ApiController
     {
-        private Usuario ConsultarUsuario(string documento)
+        Contexto contexto;
+
+        private usuario ConsultarUsuario(Usuario usuario)
         {
-            return usuario;
+                contexto.Usuarios;
         }
 
     }

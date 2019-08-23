@@ -10,9 +10,10 @@ namespace Ingelagj.Controllers
 {
     public class EditarUsuarioController : ApiController
     {
-        private Usuario EditarUsuario(string documento)
+        Contexto contexto;
+        private EditarUsuario(Usuario usuario)
         {
-            return usuario;
+            contexto.UpdateUsuario(usuario);
         }
 
     }

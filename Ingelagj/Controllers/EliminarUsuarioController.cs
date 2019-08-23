@@ -10,9 +10,11 @@ namespace Ingelagj.Controllers
 {
     public class EliminarUsuarioController : ApiController
     {
-        private Usuario EliminarUsuario(string documento)
+        Contexto contexto;
+
+        private EliminarUsuario(Usuario usuario)
         {
-            return usuario;
+            contexto.DeleteUsuario(usuario);
         }
 
     }
