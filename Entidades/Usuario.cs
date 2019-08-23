@@ -13,7 +13,7 @@ namespace Entidades
         string tipo;
         string correoElectronico;
 
-        /*
+        /**
          * Constructor de la clase Usuario
          * @param nombre nombre del usuario 
          * @param contraseña del usuario

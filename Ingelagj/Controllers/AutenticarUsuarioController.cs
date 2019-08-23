@@ -1,5 +1,5 @@
 ﻿using System;
-
+using Entidades;
 namespace Ingelagj.Controllers
 {
     public class AutenticarUsuarioController : ApiController
@@ -11,6 +11,8 @@ namespace Ingelagj.Controllers
         }
         public Boolean VerificarDatos(string CorreoElectronico, string Contraseña)
         {
+            DbSet<Usuario> Usuarios = new DbSet<Usuario>();
+
             return true;
         }
     }
