@@ -11,7 +11,7 @@ namespace Entidades
         string usuario;
         string contraseña;
 
-        /*
+        /**
          * Constructor clase FuncionarioDesarrollo 
          * @param usuario usuario con el que ingresa el funcionario al sistema
          * @contraseña es la contraseña de acceso al sistema por parte del usuario
@@ -23,7 +23,7 @@ namespace Entidades
             this.Contraseña = contraseña;
         }
 
-        /*
+        /**
          * Metodos get y set
          */
         public string Usuario { get => usuario; set => usuario = value; }
