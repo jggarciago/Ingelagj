@@ -18,7 +18,7 @@ namespace Entidades
         bool UpdateParEvaluador(ParEvaluador oldParEvaluador, ParEvaluador newParEvaluador);
         bool UpdateProyecto(Proyecto oldProyecto, Proyecto newProyecto);
         bool UpdateUsuario(Usuario oldUsuario, Usuario newUsuario);
-
+        bool UpdateAsignacion(Asignacion oldAsignacion, Asignacion newAsignacion);
         /**
          * Adiciones
          */
@@ -27,6 +27,7 @@ namespace Entidades
         void AddParEvaluador(ParEvaluador newParEvaluador);
         void AddProyecto(Proyecto newProyecto);
         void AddUsuario(Usuario newUsuario);
+        void AddAsignacion(Asignacion newAsignacion);
         /**
          * Eliminaciones
          */
@@ -35,7 +36,7 @@ namespace Entidades
         bool DeleteParEvaluador(ParEvaluador oldParEvaluador);
         bool DeleteProyecto(Proyecto oldProyecto);
         bool DeleteUsuario(Usuario oldUsuario);
-
+        bool DeleteAsignacion(Asignacion oldAsignacion);
 
     }
 }

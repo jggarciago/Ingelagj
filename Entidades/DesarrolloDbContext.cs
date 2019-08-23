@@ -19,6 +19,12 @@ namespace Persistencia
         public DbSet<Proyecto> Proyectos { get; set; }
 
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Asignacion> asignaciones { get; set; }
+
+        public void AddAsignacion(Asignacion newAsignacion)
+        {
+            throw new NotImplementedException();
+        }
 
         public void AddDocente(Docente newDocente)
         {
@@ -45,6 +51,11 @@ namespace Persistencia
             throw new NotImplementedException();
         }
 
+        public bool DeleteAsignacion(Asignacion oldAsignacion)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool DeleteDocente(Docente oldDocente)
         {
             throw new NotImplementedException();
@@ -66,6 +77,11 @@ namespace Persistencia
         }
 
         public bool DeleteUsuario(Usuario oldUsuario)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool UpdateAsignacion(Asignacion oldAsignacion, Asignacion newAsignacion)
         {
             throw new NotImplementedException();
         }

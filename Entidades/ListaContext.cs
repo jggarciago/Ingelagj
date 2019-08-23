@@ -8,6 +8,14 @@ namespace Entidades
 {
     /**
      * Clase de fachada para la base de datos.
+     * 
+     * Las consultas se realizan tal que:
+     * contexto.Docentes;
+     * Ejemplo de un GET REST 
+     * public IEnumerable<Docentes> Get()
+        {
+            return contexto.Docentes;
+        }
      */
     public class ListaContext : Contexto
     {
@@ -17,6 +25,7 @@ namespace Entidades
         public List<Proyecto> Proyectos { get; set; }
 
         public List<Usuario> Usuarios { get; set; }
+        public List<Asignacion> Asignaciones { get; set; }
 
         public ListaContext()
         {
@@ -125,6 +134,26 @@ namespace Entidades
                 return true;
             }
             return false;
+        }
+
+        public bool UpdateAsignacion(Asignacion oldAsignacion, Asignacion newAsignacion)
+        {
+            if (DeleteAsignacion(oldAsignacion))
+            {
+                AddAsignacion(newAsignacion);
+                return true;
+            }
+            return false;
+        }
+
+        public void AddAsignacion(Asignacion newAsignacion)
+        {
+            Asignaciones.Add(newAsignacion);
+        }
+
+        public bool DeleteAsignacion(Asignacion oldAsignacion)
+        {
+            return Asignaciones.Remove(oldAsignacion);
         }
     }
 }
