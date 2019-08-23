@@ -34,11 +34,9 @@ namespace Ingelagj.Controllers
             return correo;
         }
 
-        public string enviarNotificacion (Usuario usuario, string documento)
+        public string enviarNotificacion (String CorreoElectronico)
         {
-            string notificacion = " ";
-
-            return notificacion;
+            Console.WriteLine("Estoy enviando Notificación simulación a: " + CorreoElectronico);
         }
 
     }
