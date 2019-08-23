@@ -98,6 +98,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entidades\FabricaTest.cs" />
+    <Compile Include="Entidades\ListaTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
     <Compile Include="Controllers\ValuesControllerTest.cs" />
@@ -109,6 +111,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{EF29F684-F35E-4D66-A888-77B92021E916}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Ingelagj\Ingelagj.csproj">
       <Project>{197A3112-86AD-460D-A28F-72D87B0DC3C1}</Project>
       <Name>Ingelagj</Name>
