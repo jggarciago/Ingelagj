@@ -11,7 +11,7 @@ namespace Entidades
         string nombre;
         string documento;
 
-        /*
+        /**
          * Constructor clase Docente 
          *@param nombre nombre del docente
          *@param documento numero del documento de identificacion del docente
@@ -22,7 +22,7 @@ namespace Entidades
             this.Documento = documento;
         }
 
-        /*
+        /**
          * Metodos get y set de los atributos de clase
          */
         public string Nombre { get => nombre; set => nombre = value; }
