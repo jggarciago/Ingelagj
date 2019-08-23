@@ -49,8 +49,16 @@ namespace Ingelagj.Controllers
             return true;
         }
 
-        public Boolean validarPuntos (string puntos, string promedio)
+        public Boolean validarPuntos (int puntaje)
         {
+            int puntajeTotal; 
+
+            foreach (Proyecto pr in contexto.Proyectos())
+            {
+                puntajeTotal = puntaje*4600;
+                
+            }
+
             return true;
         }
     }
