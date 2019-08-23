@@ -9,11 +9,25 @@ namespace Ingelagj.Controllers
         {
             contexto = FabricarContextos.fabricarContexto("lista");
         }
+
+        /**
+         * Verifica los datos 
+         */
         public Boolean VerificarDatos(string CorreoElectronico, string Contraseña)
         {
-            DbSet<Usuario> Usuarios = new DbSet<Usuario>();
+            List<Usuarios> User = this.contexto.getUsuarios();
+            List<int> m = new List<int>();
 
-            return true;
+            foreach (Usuarios u in User)
+            {
+                if (u.getCorreoElectronico().equals(CorreoElectronico) && u.getContraseña().equals(Contraseña))
+                {
+                    return true;
+                }
+
+            }
+
+            return false;
         }
     }
 }
