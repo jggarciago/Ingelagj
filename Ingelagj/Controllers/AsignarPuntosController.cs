@@ -7,22 +7,41 @@ using System.Web.Http;
 using Entidades;
 namespace Ingelagj.Controllers
 {
-    public class AsigarPuntosController : ApiController
+    public class AsignarPuntosController : ApiController
     {
+        Contexto contexto;
+
+        public AsignarPuntosController()
+        {
+            contexto = FabricaContextos.fabricarContexto("lista");
+        }
+
+
         public Boolean verificarDocumento(string documento)
         {
-            return true;
+            
+            foreach (Docente d in contexto.Docentes())
+            {
+                if (d.Documento.Equals(documento))
+                {
+                    return true;
+                }
+            }
+            
+            return false;
         }
 
-        public Boolean verificarInfoProyecto (string documento)
+        public Boolean verificarInfoProyecto (string codigo)
         {
-            return true;
-        }
+            foreach (Proyecto dp in contexto.Proyectos())
+            {
+                if (dp.Codigo.Equals(codigo))
+                {
+                    return true;
+                }
+            }
 
-        public Proyecto buscarProyecto (string documento)
-        {
-            Proyecto proyecto = new Proyecto();
-            return proyecto;
+            return false;
         }
 
         public Boolean verificarPromedio (string promedio)

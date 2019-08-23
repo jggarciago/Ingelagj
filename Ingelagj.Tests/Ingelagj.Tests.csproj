@@ -98,6 +98,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AsigarPuntosControllerTests.cs" />
     <Compile Include="Entidades\FabricaTest.cs" />
     <Compile Include="Entidades\ListaTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

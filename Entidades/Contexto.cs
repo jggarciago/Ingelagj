@@ -8,7 +8,14 @@ namespace Entidades
 {
     public interface Contexto
     {
-        
+        List<Docente> Docentes();
+        List<FuncionarioDesarollo> Funcionarios();
+        List<ParEvaluador> Pares();
+        List<Proyecto> Proyectos();
+
+        List<Usuario> Usuarios();
+        List<Asignacion> Asignaciones();
+
 
         /**
          * Modificaciones
