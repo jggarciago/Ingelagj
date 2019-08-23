@@ -14,10 +14,10 @@ namespace Ingelagj.Controllers
          * Simulará la lista de puntajes acumulados para calcular el promedio y luego ser asignado al proyecto
          */
         List<int> PuntajesFormatos;
-        public GenerarEvaluacionProyectoController()
+        public GenerarEvaluacionProyectoController(List<int> puntajes)
         {
             contexto = FabricarContextos.fabricarContexto("lista");
-            PuntajesFormatos = new List<int>();
+            PuntajesFormatos = puntajes;
         }
         /**
          * Verifica que ninguno de los puntajes se salga del rango establecido.
