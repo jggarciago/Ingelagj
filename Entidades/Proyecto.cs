@@ -16,6 +16,7 @@ namespace Entidades
         string codigo;
         string comite;
         string pdfProyecto;
+        int puntaje; 
 
         /*
          * Constructor clase Proyecto
@@ -32,7 +33,7 @@ namespace Entidades
         {
 
         }
-        public Proyecto(string nombre, string estado, string modalidad, string fechaAprobacion, string fechaRadicacion, string codigo, string comite, string pdfProyecto)
+        public Proyecto(string nombre, string estado, string modalidad, string fechaAprobacion, string fechaRadicacion, string codigo, string comite, string pdfProyecto, int puntaje)
         {
             this.Nombre = nombre;
             this.Estado = estado;
@@ -42,11 +43,8 @@ namespace Entidades
             this.Codigo = codigo;
             this.Comite = comite;
             this.PdfProyecto = pdfProyecto;
+            this.Puntaje = puntaje;
         }
-
-        /*
-         * Metodos get y set para cada uno de los atributos 
-         */
 
         public string Nombre { get => nombre; set => nombre = value; }
         public string Estado { get => estado; set => estado = value; }
@@ -56,6 +54,12 @@ namespace Entidades
         public string Codigo { get => codigo; set => codigo = value; }
         public string Comite { get => comite; set => comite = value; }
         public string PdfProyecto { get => pdfProyecto; set => pdfProyecto = value; }
+        public int Puntaje { get => puntaje; set => puntaje = value; }
+
+        /*
+         * Metodos get y set para cada uno de los atributos 
+         */
+
     }
 
     
