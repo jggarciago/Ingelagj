@@ -12,11 +12,13 @@ namespace Ingelagj.Controllers
 
         /**
          * Verifica los datos 
+         * @Param String CorreoElectrónico, representa el correo electrónico del usuario al que se buscará que coincida
+         * @Param String contraseña, representa la contraseña del usuario al que se buscará una coincidencia
          */
         public Boolean VerificarDatos(string CorreoElectronico, string Contraseña)
         {
             List<Usuarios> User = this.contexto.getUsuarios();
-            List<int> m = new List<int>();
+
 
             foreach (Usuarios u in User)
             {
