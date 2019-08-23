@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Entidades;
 
 namespace Ingelagj.Controllers
 {
@@ -43,14 +44,29 @@ namespace Ingelagj.Controllers
             int totalPuntaje = 0;
             if(VerificarPuntaje())
             {
-                foreach (int puntaje in this.PuntajesFormatos)
+                foreach (int puntaje in PuntajesFormatos)
                 {
                     totalpuntaje = totalPuntaje + puntaje;
                 }
-                return (totalPuntaje / this.PuntajesFormatos.Count());
+                return (totalPuntaje / PuntajesFormatos.Count());
             }
             
         }
+
+
+
+
+        public void asignarPuntajeProyecto(String codigoProyecto)
+        {
+            foreach (Proyecto p in contexto.getProyectos())
+            {
+                if (p.getCodigo().Equals(codigoProyecto))
+                {
+                    p.setPuntaje(CalcularPuntajeTotal());
+                }
+            }
+        }
+        
 
 
 
